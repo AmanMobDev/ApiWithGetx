@@ -5,6 +5,14 @@ import '../api_service/api_response/user_details_model.dart';
 import '../api_service/endpoint_calling_service.dart';
 
 class ApiRepository {
+  static final ApiRepository apiRepository = ApiRepository._internal();
+
+  factory ApiRepository() {
+    return apiRepository;
+  }
+
+  ApiRepository._internal();
+
   /// In this class we can declare our repositories as per our need.
   Future<dynamic> dummyRepository() async {}
 

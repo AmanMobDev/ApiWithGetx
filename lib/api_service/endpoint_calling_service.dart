@@ -1,6 +1,8 @@
 import 'package:dio/dio.dart';
 
 class EndpointCallingService {
+  EndpointCallingService._();
+
   Dio? _dio;
 
   EndpointCallingService() {
